@@ -3,7 +3,7 @@ r47 | orgevo | 2010-05-01 22:28:35 +0000 (Sat, 01 May 2010) | 1 line
 Changed paths:
    A /tags/v1.1.2 (from /trunk/TrackingPlus:46)
 
-- tagged v1.2.2 for release
+- tagged v1.1.2 for release
 ------------------------------------------------------------------------
 r46 | orgevo | 2010-05-01 22:26:53 +0000 (Sat, 01 May 2010) | 1 line
 Changed paths:

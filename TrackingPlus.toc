@@ -1,23 +1,10 @@
 ## Interface: 30300
 ## Title: Tracking Plus
 ## Notes: Automatically changes active tracking mode according to player settings.
-## Version: 0.9
+## Version: 1.1.3
 ## Author: evolution
 ## eMail: organizedevolution@gmail.com
 ## SavedVariables: TrackingPlusDB
-## X-Curse-Packaged-Version: v1.1.2
-## X-Curse-Project-Name: Tracking Plus
-## X-Curse-Project-ID: tracking-plus
-## X-Curse-Repository-ID: wow/tracking-plus/mainline
-
-## X-eMail: organizedevolution@gmail.com
-## X-Curse-Packaged-Version: v0.9
-## X-Curse-Project-Name: TrackingPlus
-## X-Curse-Project-ID: tracking-plus
-## X-Curse-Repository-ID: wow/tracking-plus/mainline
-
-## X-Category: Tradeskill
-## X-Embeds: Ace3, LibBabble-Zone-3.0
 
 #@no-lib-strip@
 embeds.xml

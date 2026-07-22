@@ -754,10 +754,13 @@ local function IsTrackingOnCooldown()
 	-- more restrictive than required; some tracking types (racials, class abilities vs gathering, etc. have seperate cooldowns)	
 	for i = 1, GetNumTrackingTypes() do
 		local tracking_spell_name=GetTrackingInfo(i)
-		local cdStart, cdDuration, spellIsActive = GetSpellCooldown(tracking_spell_name)
-		if cdStart and cdStart ~= 0 and spellIsActive then
-			isGCDActive = true
-			break
+		if tracking_spell_name then 
+			local ok, cdStart, cdDuration, spellIsActive = pcall(GetSpellCooldown, tracking_spell_name)
+
+			if ok and cdStart and cdStart ~= 0 and spellIsActive then
+				isGCDActive = true
+				break
+			end
 		end
 	end
 	
