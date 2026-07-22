@@ -3,6 +3,7 @@
 Version: 1.1.3
 
 TrackingPlus addon by ron/evolution, fixed for Ascension Conquest of Azeroth/Bronzebeard
+
 Credit goes to the original author. I can really appreciate code that still works 15 years later and is easy to fix.
 
 # Original description
