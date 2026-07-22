@@ -1,0 +1,25 @@
+------------------------------------------------------------------------
+r260 | nevcairiel | 2010-04-04 08:55:04 +0000 (Sun, 04 Apr 2010) | 1 line
+Changed paths:
+   A /tags/3.3-release15 (from /trunk:259)
+
+Weekly Tag - #15
+------------------------------------------------------------------------
+r259 | nevcairiel | 2010-04-04 08:54:41 +0000 (Sun, 04 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/LibBabble-Zone-3.0.lua
+
+Automated LibBabble re-generation from the localization system
+------------------------------------------------------------------------
+r257 | nevcairiel | 2010-03-27 21:52:50 +0000 (Sat, 27 Mar 2010) | 1 line
+Changed paths:
+   M /trunk/LibBabble-Zone-3.0.lua
+
+Automated LibBabble re-generation from the localization system
+------------------------------------------------------------------------
+r255 | nevcairiel | 2010-03-17 17:30:27 +0000 (Wed, 17 Mar 2010) | 1 line
+Changed paths:
+   M /trunk/LibBabble-Zone-3.0.lua
+
+Automated LibBabble re-generation from the localization system
+------------------------------------------------------------------------

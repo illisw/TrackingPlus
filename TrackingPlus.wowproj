@@ -1,0 +1,341 @@
+<Project DefaultTargets="Deploy" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>TrackingPlus</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2996bfb3-21b8-462d-9538-efde5e78a0f8}</ProjectGuid>
+    <AssemblyName>TrackingCycler</AssemblyName>
+    <RootNamespace>TrackingCycler</RootNamespace>
+    <WowPath>C:\Users\Public\Games\World of Warcraft\</WowPath>
+    <AddonTitle>TrackingPlus</AddonTitle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WowAddonStudio\2.0\WowAddonStudio.targets" />
+  <ItemGroup>
+    <Content Include="Libs\Ace3\AceAddon-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceAddon-3.0\AceAddon-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceBucket-3.0\AceBucket-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceConfig-3.0\AceConfig-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceConfig-3.0\AceConfigCmd-3.0\AceConfigCmd-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceConfig-3.0\AceConfigDialog-3.0\AceConfigDialog-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceConfig-3.0\AceConfigRegistry-3.0\AceConfigRegistry-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceConsole-3.0\AceConsole-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceDB-3.0\AceDB-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceDBOptions-3.0\AceDBOptions-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceEvent-3.0\AceEvent-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\AceGUI-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceHook-3.0\AceHook-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceLocale-3.0\AceLocale-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceSerializer-3.0\AceSerializer-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceTab-3.0\AceTab-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceTimer-3.0\AceTimer-3.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\Bindings.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\CallbackHandler-1.0\CallbackHandler-1.0.xml">
+      <SubType>Frame</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libs\Ace3\Ace3.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceAddon-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceAddon-3.0\AceAddon-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceAddon-3.0\AceAddon-3.0.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\AceBucket-3.0\AceBucket-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceBucket-3.0\AceBucket-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceConfig-3.0\AceConfig-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceConfig-3.0\AceConfig-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceConfig-3.0\AceConfigCmd-3.0\AceConfigCmd-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceConfig-3.0\AceConfigCmd-3.0\AceConfigCmd-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceConfig-3.0\AceConfigDialog-3.0\AceConfigDialog-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceConfig-3.0\AceConfigDialog-3.0\AceConfigDialog-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceConfig-3.0\AceConfigRegistry-3.0\AceConfigRegistry-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceConfig-3.0\AceConfigRegistry-3.0\AceConfigRegistry-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceConsole-3.0\AceConsole-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceConsole-3.0\AceConsole-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceDB-3.0\AceDB-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceDB-3.0\AceDB-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceDBOptions-3.0\AceDBOptions-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceDBOptions-3.0\AceDBOptions-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceEvent-3.0\AceEvent-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceEvent-3.0\AceEvent-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\AceGUI-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-BlizOptionsGroup.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-Button.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-CheckBox.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-ColorPicker.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-DropDown-Items.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-DropDown.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-DropDownGroup.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-EditBox.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-Frame.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-Heading.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-Icon.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-InlineGroup.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-InteractiveLabel.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-Keybinding.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-Label.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-MultiLineEditBox.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-ScrollFrame.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-SimpleGroup.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-Slider.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-TabGroup.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-TreeGroup.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceGUI-3.0\widgets\AceGUIWidget-Window.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceGUI-3.0\AceGUI-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceHook-3.0\AceHook-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceHook-3.0\AceHook-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceLocale-3.0\AceLocale-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceLocale-3.0\AceLocale-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceSerializer-3.0\AceSerializer-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceSerializer-3.0\AceSerializer-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceTab-3.0\AceConfigTab-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceTab-3.0\AceTab-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceTab-3.0\AceTab-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceTab-3.0\AceTab-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\AceTimer-3.0\AceTimer-3.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>AceTimer-3.0\AceTimer-3.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\CallbackHandler-1.0\CallbackHandler-1.0.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>CallbackHandler-1.0\CallbackHandler-1.0.xml</DependentUpon>
+    </Content>
+    <Content Include="Libs\Ace3\LibStub\LibStub.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\Ace3.toc">
+      <SubType>TableOfContents</SubType>
+    </Content>
+    <Content Include="Libs\Ace3\Changelog-Ace3-r917.txt" />
+    <Content Include="Libs\Ace3\changelog.txt" />
+    <Content Include="Libs\Ace3\LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InternalDocs\Changelist.txt" />
+    <Content Include="embeds.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\LibBabble-Zone-3.0\Changelog-LibBabble-Zone-3.0-3.3-release15.txt" />
+    <Content Include="Libs\LibBabble-Zone-3.0\lib.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Libs\LibBabble-Zone-3.0\LibBabble-3.0.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Libs\LibBabble-Zone-3.0\LibBabble-Zone-3.0.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Libs\LibBabble-Zone-3.0\LibBabble-Zone-3.0.toc">
+      <SubType>TableOfContents</SubType>
+    </Content>
+    <Content Include="Locale\TrackingPlus-deDE.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Locale\TrackingPlus-enUS.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Locale\TrackingPlus-frFR.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Locale\TrackingPlus-koKR.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Locale\TrackingPlus-Loc.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Locale\TrackingPlus-ruRU.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Locale\TrackingPlus-zhCN.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Locale\TrackingPlus-zhTW.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="TrackingPlus.toc">
+      <SubType>TableOfContents</SubType>
+    </Content>
+    <Content Include="TrackingPlus.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="TrackingPlus.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>TrackingPlus.xml</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Libs" />
+    <Folder Include="Libs\Ace3\" />
+    <Folder Include="Libs\Ace3\AceAddon-3.0\" />
+    <Folder Include="Libs\Ace3\AceBucket-3.0\" />
+    <Folder Include="Libs\Ace3\AceConfig-3.0\" />
+    <Folder Include="Libs\Ace3\AceConfig-3.0\AceConfigCmd-3.0\" />
+    <Folder Include="Libs\Ace3\AceConfig-3.0\AceConfigDialog-3.0\" />
+    <Folder Include="Libs\Ace3\AceConfig-3.0\AceConfigRegistry-3.0\" />
+    <Folder Include="Libs\Ace3\AceConsole-3.0\" />
+    <Folder Include="Libs\Ace3\AceDB-3.0\" />
+    <Folder Include="Libs\Ace3\AceDBOptions-3.0\" />
+    <Folder Include="Libs\Ace3\AceEvent-3.0\" />
+    <Folder Include="Libs\Ace3\AceGUI-3.0\" />
+    <Folder Include="Libs\Ace3\AceGUI-3.0\widgets\" />
+    <Folder Include="Libs\Ace3\AceHook-3.0\" />
+    <Folder Include="Libs\Ace3\AceLocale-3.0\" />
+    <Folder Include="Libs\Ace3\AceSerializer-3.0\" />
+    <Folder Include="Libs\Ace3\AceTab-3.0\" />
+    <Folder Include="Libs\Ace3\AceTimer-3.0\" />
+    <Folder Include="Libs\Ace3\CallbackHandler-1.0\" />
+    <Folder Include="Libs\Ace3\LibStub\" />
+    <Folder Include="Libs\LibBabble-Zone-3.0" />
+    <Folder Include="Locale" />
+    <Folder Include="InternalDocs" />
+  </ItemGroup>
+  <!--
+	To modify your build process, add your task inside one of the targets below and uncomment it. 
+		
+	<Target Name="BeforeClean"></Target>
+	<Target Name="AfterClean"></Target>
+	<Target Name="BeforeRebuild"></Target>
+	<Target Name="AfterRebuild"></Target>
+	<Target Name="BeforeDeploy"></Target>
+	<Target Name="AfterDeploy"></Target>
+	-->
+</Project>

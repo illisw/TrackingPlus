@@ -1,0 +1,63 @@
+------------------------------------------------------------------------
+r917 | ammo | 2010-03-16 14:09:34 +0000 (Tue, 16 Mar 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-CheckBox.lua
+
+check for self.desc:GetText() being nil as well as "" to prevent setting the wrong hight on the checkbox causing bouncing checkboxes
+------------------------------------------------------------------------
+r916 | nevcairiel | 2010-03-15 12:24:36 +0000 (Mon, 15 Mar 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-Button.lua
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-CheckBox.lua
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-DropDown-Items.lua
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-DropDown.lua
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-EditBox.lua
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-Frame.lua
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-Slider.lua
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-TabGroup.lua
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-Window.lua
+
+AceGUI-3.0: Added Blizzard sounds to widgets (patch by Borlox - Ticket 120)
+------------------------------------------------------------------------
+r915 | nevcairiel | 2010-03-13 10:29:16 +0000 (Sat, 13 Mar 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-Frame.lua
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-Window.lua
+
+AceGUI-3.0: External Containers (Frame, Window) should always start in a visible state. (Ticket #121)
+------------------------------------------------------------------------
+r914 | nevcairiel | 2010-03-08 12:09:22 +0000 (Mon, 08 Mar 2010) | 1 line
+Changed paths:
+   M /trunk/AceDB-3.0/AceDB-3.0.lua
+   M /trunk/tests/AceDB-3.0.lua
+
+AceDB-3.0: Remove empty sections on logout, keeping the SV clean of more useless informations.
+------------------------------------------------------------------------
+r913 | nevcairiel | 2010-02-13 12:16:13 +0000 (Sat, 13 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua
+
+AceConfigDialog-3.0: Pass iconCoords set on groups in the options table to the tree widget (Ticket #111)
+------------------------------------------------------------------------
+r912 | nevcairiel | 2010-02-13 12:07:36 +0000 (Sat, 13 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-Icon.lua
+
+AceGUI-3.0: Icon: Fix the vertical size. It'll now properly scale with the image size, and not be fixed to about 110px. (Ticket #104)
+------------------------------------------------------------------------
+r911 | nevcairiel | 2010-02-13 11:58:13 +0000 (Sat, 13 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-CheckBox.lua
+
+AceGUI-3.0: CheckBox: Re-apply the disabled state after setting a value, so the visuals are correct in either case. (Ticket #107)
+------------------------------------------------------------------------
+r910 | mikk | 2010-02-11 21:54:24 +0000 (Thu, 11 Feb 2010) | 4 lines
+Changed paths:
+   M /trunk/AceSerializer-3.0/AceSerializer-3.0.lua
+   M /trunk/tests/AceSerializer-3.0.lua
+
+AceSerializer-3.0:
+- Ticket 115: Fix encoding & decoding of \030. OOPS!
+- Add loads more string tests to test framework
+
+------------------------------------------------------------------------

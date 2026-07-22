@@ -1,0 +1,419 @@
+------------------------------------------------------------------------
+r47 | orgevo | 2010-05-01 22:28:35 +0000 (Sat, 01 May 2010) | 1 line
+Changed paths:
+   A /tags/v1.1.2 (from /trunk/TrackingPlus:46)
+
+- tagged v1.2.2 for release
+------------------------------------------------------------------------
+r46 | orgevo | 2010-05-01 22:26:53 +0000 (Sat, 01 May 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/InternalDocs/Changelist.txt
+   M /trunk/TrackingPlus/Locale/TrackingPlus-enUS.lua
+   M /trunk/TrackingPlus/TrackingPlus.lua
+
+- added options for cycling only while mounted or flying
+------------------------------------------------------------------------
+r45 | orgevo | 2010-05-01 21:25:30 +0000 (Sat, 01 May 2010) | 1 line
+Changed paths:
+   D /trunk/TrackingPlus/.pkgmeta
+
+- removed pkgmeta until I can figure out what i'm doing wrong.
+------------------------------------------------------------------------
+r44 | orgevo | 2010-05-01 21:19:42 +0000 (Sat, 01 May 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/.pkgmeta
+
+- fixed a couple of paths in the pkgmeta, hopefully this fixes the .zip packaging
+------------------------------------------------------------------------
+r43 | orgevo | 2010-05-01 21:06:58 +0000 (Sat, 01 May 2010) | 2 lines
+Changed paths:
+   D /trunk/.pkgmeta
+   A /trunk/TrackingPlus/.pkgmeta (from /trunk/.pkgmeta:42)
+
+- gonna try moving the pkgmeta file, as the package is no longer being generated correctly
+
+------------------------------------------------------------------------
+r42 | orgevo | 2010-05-01 07:27:06 +0000 (Sat, 01 May 2010) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/TrackingPlus/TrackingPlus.wowproj
+
+- updated pkgmeta and project file to reflect new location of Changelist.txt
+------------------------------------------------------------------------
+r41 | orgevo | 2010-05-01 07:08:37 +0000 (Sat, 01 May 2010) | 1 line
+Changed paths:
+   D /trunk/TrackingPlus/Changelist.txt
+   A /trunk/TrackingPlus/InternalDocs/Changelist.txt (from /trunk/TrackingPlus/Changelist.txt:40)
+
+- [attempting to] move changelist file to internal docs
+------------------------------------------------------------------------
+r40 | orgevo | 2010-05-01 07:07:50 +0000 (Sat, 01 May 2010) | 2 lines
+Changed paths:
+   A /trunk/TrackingPlus/InternalDocs
+
+- am i doing this right?
+
+------------------------------------------------------------------------
+r38 | orgevo | 2010-04-30 22:11:35 +0000 (Fri, 30 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/TrackingPlus.lua
+
+- fixed typo in 'open config' function
+------------------------------------------------------------------------
+r37 | orgevo | 2010-04-30 22:02:54 +0000 (Fri, 30 Apr 2010) | 3 lines
+Changed paths:
+   M /trunk/TrackingPlus/Changelist.txt
+   M /trunk/TrackingPlus/TrackingPlus.lua
+
+- added permanent local reference to config dialog
+-- added variable to hold reference to profiles page
+- updated Changelist.txt
+------------------------------------------------------------------------
+r36 | orgevo | 2010-04-30 21:59:28 +0000 (Fri, 30 Apr 2010) | 2 lines
+Changed paths:
+   M /trunk/TrackingPlus/TrackingPlus.lua
+
+- removed "tracking_types" from the list of available commands reported when slash command is used with no parameters
+
+------------------------------------------------------------------------
+r35 | orgevo | 2010-04-30 21:57:52 +0000 (Fri, 30 Apr 2010) | 3 lines
+Changed paths:
+   M /trunk/TrackingPlus/TrackingPlus.lua
+
+- fixed tracking mode dropdowns not initialized with the correct values
+- fixed flickering when dragging the "number of tracking modes in cycle" slider
+
+------------------------------------------------------------------------
+r34 | orgevo | 2010-04-30 15:50:13 +0000 (Fri, 30 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/embeds.xml
+
+- disabled debug file
+------------------------------------------------------------------------
+r32 | orgevo | 2010-04-30 14:58:52 +0000 (Fri, 30 Apr 2010) | 3 lines
+Changed paths:
+   M /trunk/TrackingPlus/Changelist.txt
+   M /trunk/TrackingPlus/TrackingPlus.lua
+   M /trunk/TrackingPlus/TrackingPlus.xml
+
+- added support for setting some options from the minimap tracking button
+-- right-click the standard minimap tracking button to access the menu for Tracking Plus
+
+------------------------------------------------------------------------
+r31 | orgevo | 2010-04-30 14:57:06 +0000 (Fri, 30 Apr 2010) | 2 lines
+Changed paths:
+   M /trunk/TrackingPlus/TrackingPlus.lua
+
+- really fixed the "toggle" console command ("/tplus toggle off" now always sets the addon to disabled, rather than simply toggling the state) [no, really]
+
+------------------------------------------------------------------------
+r30 | orgevo | 2010-04-30 14:54:16 +0000 (Fri, 30 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/TrackingPlus.lua
+
+- removed all code dealing with fixing/working around issues with blizzard options panel, based on recommendations by wowace forum from more experienced addon authors
+------------------------------------------------------------------------
+r29 | orgevo | 2010-04-30 14:52:12 +0000 (Fri, 30 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/TrackingPlus.lua
+
+- all options that aren't yet implemented are now disabled in the UI
+------------------------------------------------------------------------
+r28 | orgevo | 2010-04-30 14:49:40 +0000 (Fri, 30 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/Locale/TrackingPlus-enUS.lua
+
+- changed value for TOGGLE_NAME loc string to "Cycling Enabled"
+------------------------------------------------------------------------
+r27 | orgevo | 2010-04-30 14:48:40 +0000 (Fri, 30 Apr 2010) | 4 lines
+Changed paths:
+   M /trunk/TrackingPlus/TrackingPlus.lua
+   M /trunk/TrackingPlus/embeds.xml
+
+- fixed typo in embeds.xml that was causing loc data to not load
+- fixed incorrect ordering of includes causing "missing lib" errors if no other Ace3 addons were running
+- fixed options page not updating to reflect changes made to options via alternate means (console command, etc.)
+
+------------------------------------------------------------------------
+r26 | orgevo | 2010-04-30 14:38:20 +0000 (Fri, 30 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/TrackingPlus.lua
+
+- added TrackingPlus instance to global table (_G["TrackingPlus"])
+------------------------------------------------------------------------
+r25 | orgevo | 2010-04-29 21:36:25 +0000 (Thu, 29 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/Locale/TrackingPlus-deDE.lua
+   M /trunk/TrackingPlus/Locale/TrackingPlus-frFR.lua
+   M /trunk/TrackingPlus/Locale/TrackingPlus-koKR.lua
+   M /trunk/TrackingPlus/Locale/TrackingPlus-ruRU.lua
+   M /trunk/TrackingPlus/Locale/TrackingPlus-zhCN.lua
+   M /trunk/TrackingPlus/Locale/TrackingPlus-zhTW.lua
+
+- added handle-unlocalized parameter to @localization@ tags for all languages.
+------------------------------------------------------------------------
+r24 | orgevo | 2010-04-29 21:33:04 +0000 (Thu, 29 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/Locale/TrackingPlus-enUS.lua
+
+- changed the commented loc strings to be wrapped in @debug@ tags instead, so that they work correctly on my local machine as well as when packaged
+------------------------------------------------------------------------
+r23 | orgevo | 2010-04-29 21:24:04 +0000 (Thu, 29 Apr 2010) | 2 lines
+Changed paths:
+   M /trunk/TrackingPlus/Locale/TrackingPlus-enUS.lua
+
+- readded commented loc strings now that namespaces are fixed in the repository
+-- loc string injection should work correctly now
+------------------------------------------------------------------------
+r22 | orgevo | 2010-04-29 20:50:12 +0000 (Thu, 29 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/Locale/TrackingPlus-enUS.lua
+
+- fixed loc string injection (attempt #1 - maybe it won't inject if the text is already there, but commented?)
+------------------------------------------------------------------------
+r20 | orgevo | 2010-04-29 20:29:32 +0000 (Thu, 29 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/Locale/TrackingPlus-enUS.lua
+
+- readded loc strings until I figure out why the localization injection stuff isn't working
+------------------------------------------------------------------------
+r16 | orgevo | 2010-04-29 07:11:37 +0000 (Thu, 29 Apr 2010) | 1 line
+Changed paths:
+   D /trunk/TrackingPlus/v1.0
+
+- bad tag/branch
+------------------------------------------------------------------------
+r15 | orgevo | 2010-04-29 06:53:27 +0000 (Thu, 29 Apr 2010) | 7 lines
+Changed paths:
+   A /trunk/TrackingPlus/v1.0 (from /trunk/TrackingPlus:14)
+
+- initial release; some options are still work in progress
+-- suspend cycling while trade UI is open
+-- suspend cycling while tradeskill UI is open
+-- suspend cycling while looting window is open (if cycling was enabled after loot window was opened)
+-- suspend cycling while auction UI is open
+-- suspend cycling while player is using a taxi (bat, gryphon, scripted drake, etc.)
+
+------------------------------------------------------------------------
+r14 | orgevo | 2010-04-29 06:45:53 +0000 (Thu, 29 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/Locale/TrackingPlus-enUS.lua
+
+- removed a line I forgot in previous commit
+------------------------------------------------------------------------
+r13 | orgevo | 2010-04-29 06:30:23 +0000 (Thu, 29 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus/Locale/TrackingPlus-deDE.lua
+   M /trunk/TrackingPlus/Locale/TrackingPlus-enUS.lua
+   M /trunk/TrackingPlus/Locale/TrackingPlus-frFR.lua
+   M /trunk/TrackingPlus/Locale/TrackingPlus-koKR.lua
+   M /trunk/TrackingPlus/Locale/TrackingPlus-ruRU.lua
+   M /trunk/TrackingPlus/Locale/TrackingPlus-zhCN.lua
+   M /trunk/TrackingPlus/Locale/TrackingPlus-zhTW.lua
+   M /trunk/TrackingPlus/TrackingPlus.lua
+
+- updated project localization files to use curseforge system for embedding localized text into language files
+------------------------------------------------------------------------
+r12 | orgevo | 2010-04-29 06:16:21 +0000 (Thu, 29 Apr 2010) | 2 lines
+Changed paths:
+   A /trunk/TrackingPlus (from /trunk/TrackingPlus_FirstAttempt:11)
+   D /trunk/TrackingPlus_FirstAttempt
+
+bah - renaming wasn't the right way to go...ignore all this
+
+------------------------------------------------------------------------
+r11 | orgevo | 2010-04-29 06:11:38 +0000 (Thu, 29 Apr 2010) | 1 line
+Changed paths:
+   D /trunk/TrackingPlus
+   A /trunk/TrackingPlus_FirstAttempt (from /trunk/TrackingPlus:10)
+
+Just found page on curseforge that covers exactly how to correctly setup a repository, and I did it wrong the first time.  Gonna rename this branch and try to start over.
+------------------------------------------------------------------------
+r10 | orgevo | 2010-04-28 05:54:39 +0000 (Wed, 28 Apr 2010) | 23 lines
+Changed paths:
+   M /trunk/TrackingPlus/Changelist.txt
+   A /trunk/TrackingPlus/Libs/LibBabble-Zone-3.0
+   A /trunk/TrackingPlus/Libs/LibBabble-Zone-3.0/Changelog-LibBabble-Zone-3.0-3.3-release15.txt
+   A /trunk/TrackingPlus/Libs/LibBabble-Zone-3.0/LibBabble-3.0.lua
+   A /trunk/TrackingPlus/Libs/LibBabble-Zone-3.0/LibBabble-Zone-3.0.lua
+   A /trunk/TrackingPlus/Libs/LibBabble-Zone-3.0/LibBabble-Zone-3.0.toc
+   A /trunk/TrackingPlus/Libs/LibBabble-Zone-3.0/lib.xml
+   M /trunk/TrackingPlus/Locale/TrackingPlus-enUS.lua
+   M /trunk/TrackingPlus/TrackingPlus.lua
+   M /trunk/TrackingPlus/TrackingPlus.toc
+   M /trunk/TrackingPlus/TrackingPlus.wowproj
+   M /trunk/TrackingPlus/embeds.xml
+
+- added LibBabble module for providing zone names
+- rearranged options layout to be a little more organized and easier to follow
+- amount of time before addon cycles to next tracking mode is now configurable via slider
+
+- added options for allowing automatic track-mode cycling to be temporarily suspended under certain circumstances (first pass)
+-- in cities or instances
+-- in combat
+-- using taxi (bat/gryphon)
+-- fishing
+-- trade/tradeskill/socket/auction UI open
+** doesn't catch cases where cycling is enabled while the user is already in one of these states
+
+- started fixing cases where addon doesn't prevent cycling if user is already in a particular state when add-on is enabled (e.g. fishing, in a city)
+-- hooked up logic for determining whether player is in a city or dungeon
+-- hooked up logic for determining whether player is already fishing
+-- hooked up logic for determining whether player was already in combat
+-- hooked up logic for determining whether player was using item socketing UI
+
+- added localization support
+-- changed all embedded strings to use the localized string table
+
+- fixed small bug where using the "tplus config" command wouldn't open directly to the Tracking Plus options pane, if an options category from the first tab was selected
+
+------------------------------------------------------------------------
+r9 | orgevo | 2010-04-23 21:33:16 +0000 (Fri, 23 Apr 2010) | 4 lines
+Changed paths:
+   M /trunk/TrackingPlus/Changelist.txt
+   A /trunk/TrackingPlus/Locale
+   A /trunk/TrackingPlus/Locale/TrackingPlus-Loc.xml
+   A /trunk/TrackingPlus/Locale/TrackingPlus-deDE.lua
+   A /trunk/TrackingPlus/Locale/TrackingPlus-enUS.lua
+   A /trunk/TrackingPlus/Locale/TrackingPlus-frFR.lua
+   A /trunk/TrackingPlus/Locale/TrackingPlus-koKR.lua
+   A /trunk/TrackingPlus/Locale/TrackingPlus-ruRU.lua
+   A /trunk/TrackingPlus/Locale/TrackingPlus-zhCN.lua
+   A /trunk/TrackingPlus/Locale/TrackingPlus-zhTW.lua
+   M /trunk/TrackingPlus/TrackingPlus.lua
+   M /trunk/TrackingPlus/TrackingPlus.toc
+   M /trunk/TrackingPlus/TrackingPlus.wowproj
+
+- added localization support
+-- changed all embedded strings to use the localized string table
+- fixed small bug where using the "tplus config" command wouldn't open directly to the Tracking Plus options pane, if an options category from the first tab was selected
+
+------------------------------------------------------------------------
+r8 | orgevo | 2010-04-23 08:22:42 +0000 (Fri, 23 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/TrackingPlus
+
+no idea what changed here...phew...really dislike this SCC system, heh
+------------------------------------------------------------------------
+r7 | orgevo | 2010-04-23 08:08:54 +0000 (Fri, 23 Apr 2010) | 5 lines
+Changed paths:
+   M /trunk/TrackingPlus/TrackingPlus.lua
+
+- added more items to list of missing features / options
+- fixed toggle option not working correctly
+- fixed bug with reducing the number of tracking modes; was removing the tracking mode dropdown, but still cycling through the same number of tracking modes
+- /tplus toggle (with no arguments) now works correctly, instead of always disabling the addon
+- removed some obsolete @todo's
+------------------------------------------------------------------------
+r6 | orgevo | 2010-04-23 07:54:28 +0000 (Fri, 23 Apr 2010) | 1 line
+Changed paths:
+   A /trunk/TrackingPlus/Changelist.txt
+   A /trunk/TrackingPlus/TrackingPlus.wowproj
+   A /trunk/TrackingPlus/TrackingPlus.wowsln
+
+- adding project files & changelist
+------------------------------------------------------------------------
+r5 | orgevo | 2010-04-23 07:28:01 +0000 (Fri, 23 Apr 2010) | 2 lines
+Changed paths:
+   A /trunk/TrackingPlus/Libs
+   A /trunk/TrackingPlus/Libs/Ace3
+   A /trunk/TrackingPlus/Libs/Ace3/Ace3.lua
+   A /trunk/TrackingPlus/Libs/Ace3/Ace3.toc
+   A /trunk/TrackingPlus/Libs/Ace3/AceAddon-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceAddon-3.0/AceAddon-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceAddon-3.0/AceAddon-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceAddon-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceAddon-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceBucket-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceBucket-3.0/AceBucket-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceBucket-3.0/AceBucket-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceConfig-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceConfig-3.0/AceConfig-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceConfig-3.0/AceConfig-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceConfig-3.0/AceConfigCmd-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceConfig-3.0/AceConfigCmd-3.0/AceConfigCmd-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceConfig-3.0/AceConfigCmd-3.0/AceConfigCmd-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceConfig-3.0/AceConfigDialog-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceConfig-3.0/AceConfigRegistry-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceConfig-3.0/AceConfigRegistry-3.0/AceConfigRegistry-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceConfig-3.0/AceConfigRegistry-3.0/AceConfigRegistry-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceConsole-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceConsole-3.0/AceConsole-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceConsole-3.0/AceConsole-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceDB-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceDB-3.0/AceDB-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceDB-3.0/AceDB-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceDBOptions-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceDBOptions-3.0/AceDBOptions-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceDBOptions-3.0/AceDBOptions-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceEvent-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceEvent-3.0/AceEvent-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceEvent-3.0/AceEvent-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/AceGUI-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/AceGUI-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-BlizOptionsGroup.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-Button.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-CheckBox.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-ColorPicker.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-DropDown-Items.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-DropDown.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-DropDownGroup.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-EditBox.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-Frame.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-Heading.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-Icon.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-InlineGroup.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-InteractiveLabel.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-Keybinding.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-Label.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-MultiLineEditBox.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-ScrollFrame.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-SimpleGroup.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-Slider.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-TabGroup.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-TreeGroup.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceGUI-3.0/widgets/AceGUIWidget-Window.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceHook-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceHook-3.0/AceHook-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceHook-3.0/AceHook-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceLocale-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceLocale-3.0/AceLocale-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceLocale-3.0/AceLocale-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceSerializer-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceSerializer-3.0/AceSerializer-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceSerializer-3.0/AceSerializer-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceTab-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceTab-3.0/AceConfigTab-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceTab-3.0/AceTab-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceTab-3.0/AceTab-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/AceTimer-3.0
+   A /trunk/TrackingPlus/Libs/Ace3/AceTimer-3.0/AceTimer-3.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/AceTimer-3.0/AceTimer-3.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/Bindings.xml
+   A /trunk/TrackingPlus/Libs/Ace3/CallbackHandler-1.0
+   A /trunk/TrackingPlus/Libs/Ace3/CallbackHandler-1.0/CallbackHandler-1.0.lua
+   A /trunk/TrackingPlus/Libs/Ace3/CallbackHandler-1.0/CallbackHandler-1.0.xml
+   A /trunk/TrackingPlus/Libs/Ace3/Changelog-Ace3-r917.txt
+   A /trunk/TrackingPlus/Libs/Ace3/LICENSE.txt
+   A /trunk/TrackingPlus/Libs/Ace3/LibStub
+   A /trunk/TrackingPlus/Libs/Ace3/LibStub/LibStub.lua
+   A /trunk/TrackingPlus/Libs/Ace3/changelog.txt
+   A /trunk/TrackingPlus/TrackingPlus.lua
+   A /trunk/TrackingPlus/TrackingPlus.toc
+   A /trunk/TrackingPlus/TrackingPlus.xml
+   A /trunk/TrackingPlus/embeds.xml
+
+initial commit, this time think I got it into the correct directory  :)
+- matches 0.6 zip file
+------------------------------------------------------------------------
+r4 | orgevo | 2010-04-23 07:21:37 +0000 (Fri, 23 Apr 2010) | 2 lines
+Changed paths:
+   A /trunk/TrackingPlus
+
+let's try making a subfolder
+
+------------------------------------------------------------------------

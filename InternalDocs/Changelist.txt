@@ -1,0 +1,60 @@
+1.1.2
+- added options for cycling only while mounted or flying
+
+1.1.1
+- fixed tracking mode dropdowns not initialized with the correct values
+- fixed flickering when dragging the "number of tracking modes in cycle" slider
+- removed "tracking_types" from the list of available commands reported when slash command is used with no parameters
+- added permanent local reference to config dialog
+-- added variable to hold reference to profiles page
+
+1.1
+- added TrackingPlus instance to global table (_G["TrackingPlus"])
+- fixed typo in embeds.xml that was causing loc data to not load
+- fixed incorrect ordering of includes causing "missing lib" errors if no other Ace3 addons were running
+- fixed options page not updating to reflect changes made to options via alternate means (console command, etc.)
+-- fixed changing number of tracking modes in cycle not correctly updating config UI
+- removed all code dealing with fixing/working around issues with blizzard options panel, based on recommendations by wowace forum from more experienced addon authors
+
+- all options that aren't yet implemented are now disabled in the UI
+- really fixed the "toggle" console command ("/tplus toggle off" now always sets the addon to disabled, rather than simply toggling the state)
+
+- added support for setting some options from the minimap tracking button
+-- right-click the standard minimap tracking button to access the menu for Tracking Plus
+
+
+0.9
+- added LibBabble module for providing zone names
+
+- started fixing cases where addon doesn't prevent cycling if user is already in a particular state when add-on is enabled (e.g. fishing, in a city)
+-- hooked up logic for determining whether player is in a city or dungeon
+-- hooked up logic for determining whether player is already fishing
+-- hooked up logic for determining whether player was already in combat
+-- hooked up logic for determining whether player was using item socketing UI
+
+- rearranged options layout to be a little more organized and easier to follow
+
+
+0.8
+- amount of time before addon cycles to next tracking mode is now configurable via slider
+
+- added options for allowing automatic track-mode cycling to be temporarily suspended under certain circumstances (first pass)
+-- in cities or instances
+-- in combat
+-- using taxi (bat/gryphon)
+-- fishing
+-- trade/tradeskill/socket/auction UI open
+** doesn't catch cases where cycling is enabled while the user is already in one of these states
+
+
+0.7a
+- added localization support
+-- changed all embedded strings to use the localized string table
+
+- fixed small bug where using the "tplus config" command wouldn't open directly to the Tracking Plus options pane, if an options category from the first tab was selected
+
+
+0.7
+- Fixed removing tracking modes from rotation not working (was only updating UI, still cycling through the original number of modes)
+- Fixed a few typos from the name change (Tracking Cycler => Tracking Plus)
+- Fixed toggle command not working correctly

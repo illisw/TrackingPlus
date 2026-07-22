@@ -1,0 +1,10 @@
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+	<Script file="TrackingPlus-deDE.lua" />
+	<Script file="TrackingPlus-enUS.lua" />
+	<Script file="TrackingPlus-frFR.lua" />
+	<Script file="TrackingPlus-koKR.lua" />
+	<Script file="TrackingPlus-ruRU.lua" />
+	<Script file="TrackingPlus-zhCN.lua" />
+	<Script file="TrackingPlus-zhTW.lua" />
+</Ui>
